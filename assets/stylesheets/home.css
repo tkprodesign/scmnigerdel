@@ -1,0 +1,453 @@
+@import url(./main.css);
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+section.hero {
+  position: relative;
+  height: calc(100vh - 64px);
+  max-height: 900px;
+  overflow: hidden !important;
+  border-radius: 0% 100% 0% 100%/76% 0% 100% 24%;
+}
+section.hero .bg {
+  background-image: url("/assets/images/others/hero-gif.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  z-index: 0;
+  border-radius: 0% 100% 0% 100%/76% 0% 100% 24%;
+}
+section.hero .shade {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #223645;
+  opacity: 0.9;
+  z-index: 1;
+  border-radius: 0% 100% 0% 100%/76% 0% 100% 24%;
+}
+section.hero .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  z-index: 2;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-radius: 0% 100% 0% 100%/76% 0% 100% 24%;
+}
+section.hero .container .left {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+section.hero .container .left .ring {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 90%;
+  transform: translate(0%, -50%);
+  opacity: 0.2;
+}
+section.hero .container .left .figure {
+  width: 90%;
+  position: relative;
+  top: 100px;
+}
+section.hero .container .right {
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.hero .container .right .heading {
+  line-height: 1.3;
+}
+section.hero .container .right .heading h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+section.hero .container .right .heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+section.hero .container .right .heading h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+section.hero .container .right .spacer {
+  background: #fff;
+  height: 5px;
+  width: 100px;
+  margin: 32px auto;
+}
+section.hero .container .right .cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+section.hero .container .right .cta .pri {
+  background: #FA0306;
+  padding: 15px 26px;
+  border-radius: 25px;
+  border: 1px solid #FA0306;
+}
+section.hero .container .right .cta .sec {
+  border: 1px solid #fff;
+  padding: 15px 26px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+section.hero .container .right .cta .sec:hover {
+  background: #FA0306;
+  border-color: #FA0306;
+}
+
+section.nc .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section.nc .container .name {
+  text-align: center;
+}
+section.nc .container .name h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+section.nc .container .name p {
+  color: #696a87;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+section.nc .container .countdown-timer {
+  position: relative;
+  top: -110px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 2;
+  width: 100%;
+  padding: 28px;
+  box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.15);
+}
+section.nc .container .countdown-timer .timer-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+section.nc .container .countdown-timer .timer-container .time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.nc .container .countdown-timer .timer-container .time-unit h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #FA0306;
+}
+section.nc .container .countdown-timer .timer-container .time-unit span {
+  color: #696a87;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section.nc .container .countdown-timer #message {
+  font-size: 2em;
+  color: green;
+  display: none;
+}
+
+section.greetings {
+  padding: 40px 0;
+}
+section.greetings .container {
+  display: grid;
+  grid-template-columns: calc(33% - 20px) calc(67% - 20px);
+  gap: 40px;
+}
+section.greetings .container .left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+section.greetings .container .left img {
+  width: 100%;
+}
+section.greetings .container .left .title h3 {
+  color: #223645;
+  margin-bottom: 12px;
+}
+section.greetings .container .left .title p {
+  color: #696a87;
+  font-weight: 500;
+}
+section.greetings .container .right .heading {
+  margin-bottom: 16px;
+}
+section.greetings .container .right .heading span {
+  color: #FA0306;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  display: block;
+}
+section.greetings .container .right .heading h2 {
+  color: #223645;
+  font-size: 40px;
+}
+section.greetings .container .right .content p {
+  line-height: 1.6;
+  color: #223645;
+}
+section.greetings .container .right .content .address {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  gap: 16px;
+}
+section.greetings .container .right .content .address svg {
+  width: 40px;
+  fill: #696a87;
+}
+section.greetings .container .right .content .address span {
+  color: #696a87;
+}
+
+section.vd .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  top: 28px;
+  gap: 40px;
+  z-index: 1;
+}
+section.vd .container .col {
+  display: grid;
+  grid-template-columns: 80px auto;
+  gap: 30px;
+  padding: 40px 50px 40px 50px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 25px 25px 25px 25px;
+  background: #fff;
+}
+section.vd .container .col .icon {
+  border-radius: 25px 25px 25px 25px;
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-content: center;
+}
+section.vd .container .col .icon span {
+  color: #fff;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+section.vd .container .col.venue .icon {
+  background: #FA0306;
+}
+section.vd .container .col.date .icon {
+  background: #223645;
+}
+section.vd .container .col .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.vd .container .col .text h3 {
+  font-size: 20px;
+  color: #223645;
+}
+section.vd .container .col .text p {
+  font-weight: 400;
+  color: #696a87;
+}
+
+section.stats {
+  padding: 80px 0 40px 0;
+  background: #f8f8f8;
+}
+section.stats .container {
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  text-align: center;
+}
+section.stats .container .stat {
+  border-right: 0.5px solid #696a87;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  padding: 28px 0;
+}
+section.stats .container .stat h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #223645;
+  display: flex;
+  gap: 0;
+}
+section.stats .container .stat p {
+  font-weight: 300;
+  color: #696a87;
+  letter-spacing: 0.5px;
+}
+section.stats .container .stat:nth-of-type(4) {
+  border: none;
+}
+
+section.features {
+  position: relative;
+  background: url("/assets/images/others/hero-gif.gif");
+  background-size: cover;
+  padding: 160px 0;
+}
+section.features .shade {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #223645;
+  opacity: 0.9;
+  z-index: 1;
+}
+section.features .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  z-index: 2;
+  gap: 80px;
+}
+section.features .container .col {
+  background: #fff;
+  padding: 30px 40px 40px 40px;
+  border-radius: 25px;
+  height: 220px;
+  position: relative;
+}
+section.features .container .col div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.features .container .col div i {
+  color: #FA0306;
+  font-size: 70px;
+}
+section.features .container .col div p {
+  color: #223645;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+section.features .container .col h2 {
+  position: absolute;
+  font-size: 55px;
+  font-weight: 700;
+  color: #FA0306;
+  top: 36px;
+  right: 40px;
+  opacity: 0.3;
+}
+
+section.contact {
+  padding: 80px 0;
+  background: #f8f8f8;
+}
+section.contact .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+}
+section.contact .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+section.contact .container form .row .input-box input, section.contact .container form .row .input-box textarea {
+  background: #fff;
+  width: 100%;
+  border-radius: 25px;
+  min-height: 26px;
+  overflow: hidden;
+  padding: 16px;
+}
+section.contact .container form .row.one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+section.contact .container form .row button {
+  color: #fff;
+  background: #FA0306;
+  display: block;
+  border-radius: 25px;
+  padding: 16px;
+  width: 100%;
+}
+section.contact .container .right {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+section.contact .container .right .col {
+  display: grid;
+  grid-template-columns: 80px auto;
+  gap: 30px;
+}
+section.contact .container .right .col .icon {
+  border-radius: 50%;
+  border: 1px solid #FA0306;
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-content: center;
+}
+section.contact .container .right .col .icon span {
+  color: #FA0306;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+section.contact .container .right .col .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section.contact .container .right .col .text h3 {
+  font-size: 20px;
+  color: #223645;
+}
+section.contact .container .right .col .text p {
+  font-weight: 400;
+  color: #696a87;
+}
+
+section.map {
+  width: 100%;
+  height: 60vh;
+  max-height: 600px;
+}/*# sourceMappingURL=home.css.map */

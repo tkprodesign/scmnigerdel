@@ -1,0 +1,109 @@
+@import url(./main.css);
+header .container .right ul li a {
+  color: #FA0306;
+}
+
+section.accommodations .container .heading {
+  padding: 60px 0;
+}
+section.accommodations .container .heading h3 {
+  font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+section.accommodations .container .acc {
+  margin-bottom: 18px;
+  border: 0.5px solid #696a87;
+  cursor: pointer;
+}
+section.accommodations .container .acc .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background: rgb(103, 32, 114);
+  font-size: 20px;
+  padding: 12px;
+}
+section.accommodations .container .acc .title .left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+section.accommodations .container .acc .title .left .bi-plus {
+  display: inline;
+}
+section.accommodations .container .acc .title .left .bi-dash {
+  display: none;
+}
+section.accommodations .container .acc .title .right .bi-chevron-right {
+  display: inline;
+}
+section.accommodations .container .acc .title .right .bi-chevron-down {
+  display: none;
+}
+section.accommodations .container .acc .content {
+  display: none;
+  padding: 12px;
+}
+section.accommodations .container .acc .content .helpdesk {
+  padding: 12px 0;
+}
+section.accommodations .container .acc .content table {
+  width: 100%;
+}
+section.accommodations .container .acc .content table thead tr td {
+  color: #fff;
+  padding: 12px;
+  background: #4b1873;
+}
+section.accommodations .container .acc .content table tbody tr td {
+  padding: 12px;
+  border: 0.5px solid #223645;
+}
+section.accommodations .container .acc.active .title .left .bi-plus {
+  display: none;
+}
+section.accommodations .container .acc.active .title .left .bi-dash {
+  display: inline;
+}
+section.accommodations .container .acc.active .title .left h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+section.accommodations .container .acc.active .title .right .bi-chevron-right {
+  display: none;
+}
+section.accommodations .container .acc.active .title .right .bi-chevron-down {
+  display: inline;
+}
+section.accommodations .container .acc.active .content {
+  display: block;
+}
+
+section.contacts {
+  padding: 80px 0;
+  position: relative;
+}
+section.contacts .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  z-index: 2;
+  gap: 40px;
+}
+section.contacts .container .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.contacts .container .col h3 {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+section.contacts .container .col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}/*# sourceMappingURL=accommodation.css.map */

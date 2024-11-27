@@ -1,0 +1,92 @@
+@import url(./main.css);
+header .container .right ul li a {
+  color: #FA0306;
+}
+
+section.page-title {
+  color: #223645;
+  padding: 20px 0;
+}
+section.page-title h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+section.form {
+  padding: 80px 0;
+}
+section.form .container form {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  border: 1px solid #D9D9D9;
+  padding: 30px 45px 30px 45px;
+  border-radius: 6px;
+  height: 700px;
+  position: relative;
+}
+section.form .container form .heading {
+  margin-bottom: 40px;
+}
+section.form .container form .heading h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  text-align: center;
+}
+section.form .container form .heading p {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+section.form .container form .heading .steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+section.form .container form .heading .steps .step {
+  height: 48px;
+  background: #9295F7;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+section.form .container form .heading .steps .step p {
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+section.form .container form .heading .steps .step.active {
+  background: #6164C1;
+}
+section.form .container form .group .row {
+  width: 100%;
+  margin-bottom: 32px;
+}
+section.form .container form .group .row .input-box {
+  width: 100%;
+}
+section.form .container form .group .row .input-box label {
+  display: block;
+  margin-bottom: 4px;
+}
+section.form .container form .group .row .input-box input, section.form .container form .group .row .input-box select {
+  border-radius: 25px;
+  padding: 12px;
+  border: 1px solid #000;
+  width: 100%;
+  background: unset;
+}
+section.form .container form .group .row.buttons {
+  position: absolute;
+  left: 45px;
+  bottom: 30px;
+  display: flex;
+  gap: 4px;
+}
+section.form .container form .group .row.buttons a, section.form .container form .group .row.buttons button {
+  color: #fff;
+  background: #9295F7;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+}/*# sourceMappingURL=reg.css.map */

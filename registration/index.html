@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/stylesheets/reg.css">
+    <link rel="shortcut icon" href="/assets/images/identity/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <a href="/" id="logo">
+            <img src="/assets/images/identity/logo-alt.png" alt="">
+        </a>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/accommodation">Accommodation</a></li>
+                </ul>
+            </nav>
+            <a href="/registration" class="sec-nav">Register</a>
+        </div>
+    </div>
+</header>
+
+
+
+<section class="page-title">
+    <div class="container">
+        <h1>Registration</h1>
+    </div>
+</section>
+
+
+
+<section class="form">
+    <div class="container">
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="heading">
+                <h2>CON Standing Committee Meeting - Niger Delta 2025</h2>
+                <p>Please fill the details below to register. NOTE: NO DIOCESE IS ALLOWED TO REGISTER MORE THAN 5 DELEGATES</p>
+                <div class="steps">
+                    <div class="step one">
+                        <p>Step 1 - Profile</p>
+                    </div>
+                    <div class="step two">
+                        <p>Step 2 - Designation</p>
+                    </div>
+                    <div class="step three">
+                        <p>Step 3 - Upload</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="group" id="groupOne">
+                <div class="row">
+                    <div class="input-box">
+                        <label>Full Name*</label>
+                        <input type="text" name="name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-box">
+                        <label>Email*</label>
+                        <input type="email" name="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-box">
+                        <label>Phone Number*</label>
+                        <input type="text" name="number" required>
+                    </div>
+                </div>
+                <div class="row buttons">
+                    <button type="button" class="next">Next</button>
+                </div>
+            </div>
+        
+            <div class="group" id="groupTwo" style="display: none;">
+                <div class="row">
+                    <div class="input-box">
+                        <label>Designation</label>
+                        <select name="designationInput" id="designationInput">
+                            <option value="Primate">Primate</option>
+                            <option value="Primate's Wife">Primate's Wife</option>
+                            <option value="Archbishop">Archbishop</option>
+                            <option value="Archbishop's Wife">Archbishop's Wife</option>
+                            <option value="Bishop">Bishop</option>
+                            <option value="Bishop's Wife">Bishop's Wife</option>
+                            <option value="Clergy">Clergy</option>
+                            <option value="Women Delegate">Women Delegate</option>
+                            <option value="MU/WG Delegate">MU/WG Delegate</option>
+                            <option value="SC Delegate">SC Delegate</option>
+                            <option value="Legal">Legal</option>
+                            <option value="Laity">Laity</option>
+                            <option value="LOC">LOC</option>
+                            <option value="Secretariat">Secretariat</option>
+                            <option value="Retired Archbishop">Retired Archbishop</option>
+                            <option value="Retired Bishop">Retired Bishop</option>
+                            <option value="Retired Clergy">Retired Clergy</option>
+                            <option value="Media">Media</option>
+                            <option value="Driver">Driver</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-box">
+                        <label for="provinceInput">Province</label>
+                        <select name="provinceInput" id="provinceInput">
+                            <option value="" disabled selected>Select Province</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-box">
+                        <label for="dioceseInput">Diocese</label>
+                        <select name="dioceseInput" id="dioceseInput">
+                            <option value="" disabled selected>Select Diocese</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-box">
+                        <label>Means of Transportation</label>
+                        <select name="transportationInput" id="transportationInput">
+                            <option value="By Air">By Air</option>
+                            <option value="By Road">By Road</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row buttons">
+                    <button type="button" class="previous">Previous</button>
+                    <button type="button" class="next">Next</button>
+                </div>
+            </div>
+        
+            <div class="group" id="groupThree" style="display: none;">
+                <div class="row">
+                    <div class="input-box">
+                        <label for="passportPhoto">Passport Photograph (Max: 5MB)</label>
+                        <input type="file" id="passportPhoto" name="passportPhoto" accept="image/*" required>
+                    </div>
+                </div>
+                <div class="row buttons">
+                    <button type="button" class="previous">Previous</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+                
+
+    </div>
+</section>
+
+
+
+
+
+<footer>
+    <div class="shade"></div>
+    <div class="container top">
+        <div class="left">
+            <a href="/" id="logo2">
+                <img src="/assets/images/identity/logo.png" alt="">
+            </a>
+            <p>The Anglican <i>Diocese of Niger Delta</i> is one of 13 within the Anglican Province of Niger Delta, itself one of 14 provinces within the Church of Nigeria.</p>
+            <div class="socials">
+                <a href="#">
+                    
+                </a>
+                <a href="#">
+
+                </a>
+                <a href="#">
+
+                </a>
+                <a href="#">
+
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <form action="" method="post">
+                <h3>JOIN OUR NEWSLETTER</h3>
+                <p>Subscribe our newsletter to get latest news and update from us.</p>
+                <div class="row">
+                    <div class="input-box">
+                        <input type="email" name="" id="">
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit">SUBSCRIBE NOW</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container bottom">
+        <div class="left">
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">TERM & CONDITION</a>
+            <a href="#">SUPPORT</a>
+        </div>
+        <div class="right">
+            <p>Copyright © 2024 SCM. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+<script src="/assets/scripts/index.js"></script>
+<script src="/assets/scripts/reg.js"></script>
+</body>
+</html>

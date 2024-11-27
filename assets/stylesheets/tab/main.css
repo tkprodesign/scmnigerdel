@@ -1,0 +1,31 @@
+header {
+  background: none;
+}
+header .container {
+  position: relative;
+}
+header .container .right {
+  gap: 16px;
+}
+header .container .right nav {
+  position: absolute;
+  bottom: 0;
+  left: -16px;
+  background: #fff;
+  transform: translateY(100%);
+  width: 100vw;
+}
+header .container .right nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 0;
+}
+header .container .right nav ul li a {
+  color: #FA0306;
+  display: block;
+  text-align: center;
+}
+header .container .right #menuToggle {
+  display: inline;
+}/*# sourceMappingURL=main.css.map */
