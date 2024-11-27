@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Can</title>
     <link rel="stylesheet" href="/assets/stylesheets/home.css?v=<?php echo time();?>">
     <link rel="stylesheet" href="/assets/stylesheets/tab/home.css?v=<?php echo time();?>" media="(max-width: 1025px)">
     <!-- <link rel="stylesheet" media="(max-width: 768px) href="/assets/stylesheets/mobile/home.css"> -->
